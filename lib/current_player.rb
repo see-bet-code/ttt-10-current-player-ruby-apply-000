@@ -1,19 +1,7 @@
 def turn_count(board)
-  count = 0
-  board.each do |mem|
-    if ["X","x","O","o"].include?(mem)
-      count += 1
-    end
-  end
-  count
+  board.count{ |mem| ["X","x","O","o"].include?(mem)}
 end
 
 def current_player(board)
-  #if turn_count(board) % 2 == 0
-  #  "X"
-  #else
-  #  "O"
-  #end
-
   turn_count(board).even? ? "X" : "O"
 end
