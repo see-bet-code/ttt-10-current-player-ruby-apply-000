@@ -1,9 +1,10 @@
 def turn_count(board)
   count = 0
   board.each do |mem|
-    if ["X","x","O","o"].include?(mem)
-      count += 1
-    end
+    #if ["X","x","O","o"].include?(mem)
+    #  count += 1
+    #end
+    ["X","x","O","o"].include?(mem) ? count +=1 :
   end
   count
 end
