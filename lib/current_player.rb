@@ -1,5 +1,5 @@
 def turn_count(board)
-  board.count{ |mem| ["X","x","O","o"].include?(mem) ? count +=1 : nil}
+  board.count{ |mem| ["X","x","O","o"].include?(mem)}
 end
 
 def current_player(board)
