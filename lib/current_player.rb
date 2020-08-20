@@ -4,7 +4,7 @@ def turn_count(board)
     #if ["X","x","O","o"].include?(mem)
     #  count += 1
     #end
-    ["X","x","O","o"].include?(mem) ? count +=1 : nil
+    ["X","x","O","o"].include?(mem) ? count +=1 : break
   end
   count
 end
